@@ -7,12 +7,8 @@
 <?php include 'sections/head.php'
   ?>
 <body>
-
-
-  <?php include 'sections/header.php'
-  ?>
-
-  <?php include 'sections/footer.php'
-  ?>
+  <?php include 'sections/header.php'?>
+  <?php include 'sections/body.php' ?>
+  <?php include 'sections/footer.php'?>
 </body>
 </html>
