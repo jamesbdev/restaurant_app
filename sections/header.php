@@ -1,17 +1,26 @@
 <header>
-<h1>test</h1>
+<h1>Food delivery App</h1>
 <div class="card text-center">
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
+     <?php 
+       foreach ($main_menu as $menu_item) {
+
+        ?>
+        <li class="nav-item">
+        <a class="nav-link" href="<?php echo $menu_item.url; ?>"><?php 
+          echo $menu_item[name];
+        
+        ?>
+      </a>
+        </li>
+<?php
+       
+      }
+
+?>
+     
+     
     </ul>
   </div>
   <div class="card-body">
