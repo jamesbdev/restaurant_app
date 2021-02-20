@@ -5,9 +5,11 @@
     <ul class="nav nav-tabs card-header-tabs">
      <?php 
        foreach ($main_menu as $menu_item) {
-        ?>
+        
+        ?> 
         <li class="nav-item">
-        <a class="nav-link" href="<?php echo $menu_item.url; ?>"><?php 
+        <a class="nav-link" href="<?php echo $menu_item[href]; ?>">
+        <?php 
           echo $menu_item[name];
         ?>
       </a>
